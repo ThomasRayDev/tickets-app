@@ -131,9 +131,66 @@ button {
   }
 }
 
+.el-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .container {
   width: 50%;
   margin-right: 12vw;
   padding-left: 2vw;
   border-left: 2px solid #dedede;
+  margin-bottom: 5vh;
+}
+
+.tickets {
+  border-top: 1px solid #dedede;
+  margin-top: 25px;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.ticket {
+  padding: 10px 0;
+
+  &-description {
+    margin: 10px 0;
+  }
+
+  &-info {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.status {
+  border: 1px solid black;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.open {
+  border-color: #0a67ff;
+  color: #0a67ff;
+  background-color: #c2d9ff;
+}
+
+.work {
+  border-color: #ff050d;
+  color: #ff050d;
+  background-color: #ffd6d8;
+}
+
+.solved {
+  border-color: #15b215;
+  color: #15b215;
+  background-color: #ccffcc;
+}
+
+.draft {
+  border-color: #ad00eb;
+  color: #ad00eb;
+  background-color: #f4d6ff;
 }
