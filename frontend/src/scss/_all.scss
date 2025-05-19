@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+a {
+  color: black;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.page-center {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  padding: 40px;
+  border-radius: 20px;
+  width: 450px;
+
+  p {
+    color: #999999;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 20px 0;
+
+    label {
+      margin: 10px 0 5px 0;
+      font-weight: 600;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.register {
+  &-name {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  padding: 10px 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #dedede;
+
+  &-account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      color: #888888;
+    }
+
+    button {
+      width: 80px;
+      color: black;
+      background-color: white;
+      border: 2px solid #dedede;
+      border-radius: 8px;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+  margin-left: 10vw;
+  gap: 10vw;
+
+  p {
+    color: #888888;
+  }
+}
+
+.navigation {
+  li {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    p {
+      color: black;
+    }
+  }
+}
+
+.container {
+  width: 50%;
+  margin-right: 12vw;
+  padding-left: 2vw;
+  border-left: 2px solid #dedede;
+}
