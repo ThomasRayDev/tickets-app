@@ -87,6 +87,10 @@ button {
   align-items: center;
   border-bottom: 3px solid #dedede;
 
+  h2 {
+    cursor: pointer;
+  }
+
   &-account {
     display: flex;
     align-items: center;
@@ -193,4 +197,8 @@ button {
   border-color: #ad00eb;
   color: #ad00eb;
   background-color: #f4d6ff;
+}
+
+.not-found {
+  text-align: center;
 }

@@ -2,22 +2,15 @@ import React from 'react';
 import axios from '../utils/axios';
 
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { setUserData } from '../redux/slices/userSlice';
+
+import Header from '../components/Header';
 
 const Home = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  const userLogin = useSelector((state) => state.user.login);
-
-  const handleLogout = (event) => {
-    event.preventDefault();
-
-    window.localStorage.removeItem('access_token');
-    navigate('/login');
-  };
 
   const getCurrentUser = async () => {
     try {
@@ -44,13 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="header">
-        <h2>Tixly</h2>
-        <div className="header-account">
-          <p>{userLogin}</p>
-          <button onClick={handleLogout}>Выйти</button>
-        </div>
-      </div>
+      <Header />
       <div className="wrapper">
         <div className="navigation">
           <p>Навигация</p>
